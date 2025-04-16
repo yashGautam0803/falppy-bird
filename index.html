@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Flappy Bird</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            touch-action: none;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            user-select: none;
+            overflow: hidden;
+        }
+        .game-container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        canvas {
+            max-width: 100%;
+            max-height: 100%;
+            touch-action: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="score">Score: 0 | High Score: 0</div>
+        <div id="gameOver" class="hidden">
+            Game Over!<br>
+            <span id="restartText">Tap to Restart</span>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 
